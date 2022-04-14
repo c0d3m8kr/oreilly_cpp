@@ -23,7 +23,7 @@ int Pizza::getCost()
     return cost;
 }
 
-void Pizza::printToppings()
+void Pizza::printToppings() const
 {
     cout << "The toppings on your pizza are:" << endl;
     for (string topping : toppings){

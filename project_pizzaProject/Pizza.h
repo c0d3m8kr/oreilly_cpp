@@ -13,7 +13,7 @@ class Pizza
         Pizza(string name, int cost, int diameter);
         void addTopping(string topping);
         int getCost();
-        void printToppings();
+        void printToppings() const;
 
     private:
         string name;
