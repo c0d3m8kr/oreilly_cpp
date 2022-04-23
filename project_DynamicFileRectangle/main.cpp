@@ -99,10 +99,17 @@ void dataInput(ifstream& infile, vector <Rectangle*>& rectVect)
 
 void dataOutput(ofstream& outfile, vector <Rectangle*>& rectVect)
 {
-    //outfile << fixed << showpoint;
+    outfile << fixed << showpoint;
+    cout << fixed << showpoint;
+
     for (Rectangle* rect : rectVect)
     {
-        outfile << rect->calcPerimeter() << "\t" << rect->calcArea() << endl;
+        //outfile << rect->calcPerimeter() << "\t" << rect->calcArea() << endl;
+        outfile << setw(3) << setprecision(1) << rect->getLength() << setw(3) << setprecision(1) << rect->getWidth()
+                << setw(6) << setprecision(1) << rect->calcArea() << setw(6) << setprecision(1) << rect->calcPerimeter() << endl;
+
+        cout << setw(3) << setprecision(1) << rect->getLength() << setw(3) << setprecision(1) << rect->getWidth()
+                << setw(6) << setprecision(1) << rect->calcArea() << setw(6) << setprecision(1) << rect->calcPerimeter() << endl;
     }
 }
 
