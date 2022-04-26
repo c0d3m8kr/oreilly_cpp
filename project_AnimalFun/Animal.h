@@ -15,6 +15,7 @@ class Animal
         double getWeight() const;
         void setWeight(double weight);
         virtual string makeNoise() const = 0;
+        virtual string eat() const = 0;
     private:
         string name;
         double weight;

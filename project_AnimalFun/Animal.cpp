@@ -4,12 +4,16 @@
 
 using namespace std;
 
-Animal::~Animal(){};
+Animal::~Animal()
+{
+    cout << "Base destructor called." << endl;
+}
 
 Animal::Animal(string name, double weight)
 {
     this->name = name;
     this->weight = weight;
+    cout << "Base constructor called." << endl;
 }
 
 string Animal::getName() const

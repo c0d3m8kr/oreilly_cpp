@@ -10,6 +10,7 @@ Dog::Dog(string name, double weight, string breed) : Animal(name, weight)
     //setName(name);
     //setWeight(weight);
     this->breed = breed;
+    cout << "Derived constructor called." << endl;
 }
 
 /* The instantiation above can also be done with this:
@@ -18,6 +19,11 @@ Dog::Dog(string name, double weight, string breed) : Animal(name, weight)
     this->breed = breed;
 }
 */
+
+Dog::~Dog()
+{
+    cout << "Derived destructor called." << endl;
+}
 
 string Dog::getBreed() const
 {
@@ -42,4 +48,9 @@ string Dog::makeNoise() const
 void Dog::chaseCat() const
 {
     cout << "Here, kitty kitty!" << endl;
+}
+
+string Dog::eat() const
+{
+    return "I love dog food!";
 }
