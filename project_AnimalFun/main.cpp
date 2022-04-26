@@ -19,6 +19,7 @@ int main()
     dogPtr = nullptr;
 
     dogPtr = new Dog("Woofers", 118, "Awesome Breed");
+
     delete dogPtr;
     dogPtr = nullptr;
 
