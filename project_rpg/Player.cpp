@@ -8,10 +8,16 @@ using namespace std;
 
 Player::Player(string name, Race race, int hitPoints, int magicPoints)
 {
+    cout << "Player Class: Constructor" << endl;
     this->name = name;
     this->race = race;
     this->hitPoints = hitPoints;
     this->magicPoints = magicPoints;
+}
+
+Player::~Player()
+{
+    cout << "Player Class: Deconstructor" << endl;
 }
 
 string Player::getName() const

@@ -12,6 +12,7 @@ class Player
 {
     public:
         Player(string name, Race race, int hitPoints, int magicPoints);
+        virtual ~Player();
         string getName() const;
         Race getRace() const;
         string whatRace() const;

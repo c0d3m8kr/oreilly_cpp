@@ -10,6 +10,7 @@ class Priest : public Player
 {
     public:
         Priest(string name, Race race);
+        ~Priest();
         string attack() const;
     private:
 };

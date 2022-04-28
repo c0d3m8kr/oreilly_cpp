@@ -10,6 +10,7 @@ class Mage : public Player
 {
     public:
         Mage(string name, Race race);
+        ~Mage();
         string attack() const;
     private:
 };
